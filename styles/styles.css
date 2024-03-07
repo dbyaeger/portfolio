@@ -1,28 +1,45 @@
 body {
     margin: 0px;
     background-color: #44475a;
+    font-family: "Kode Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 article, aside, section {
-    padding-left: 10px;
-    padding-top: 50px;
-    color: #8be9fd;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    color: #bd93f9;
+    padding-bottom: 20rem;
 }
 h1, h2 {
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
     color: #f8f8f2;
     font-size: large;
-    font-family: monospace;
     display: inline;
 }
+h1 {
+    font-size: 2.5em;
+    font-family: "Rubik Mono One", monospace;
+}
+h2 {
+    font-size: 2em;
+}
 nav {
-    padding-top: 10px;
+    padding-top: 1rem;
     background-color: #282a36;
-    padding-left: 10px;
+    padding-left: 1rem;
+    padding-right: 4rem;
 }
 a {
     font-weight: bold;
     color: #50fa7b;
-    font-family: monospace;
+    font-size: 1.75rem;
     display: inline;
     padding-right: 30px;
     text-decoration: none;
@@ -39,19 +56,37 @@ aside ul li{
     display: inline-block;
     padding-left: 30px;
 }
-aside {
-    padding-top: 20px;
-}
-.social img {
-    transition: transform .7s ease-in-out;
-}
-.social img:hover {
-    transform: rotate(180deg);
+i {
+    font-size: 4em;
 }
 footer {
-    padding-top: 50px;
-    padding-left: 10px;
-    padding-bottom: 20px;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
     color: #f8f8f2;
-    font-family: monospace;
+    font-size: 1.5em;
+    background-color: #ff79c6;
+}
+ 
+article {
+    width: 52rem;
+    margin-right: 4rem;
+}
+
+aside {
+
+    border-left: 4px solid #f8f8f2;;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+aside header h2 {
+    margin-left: 9rem;
+}
+
+p strong {
+    color: #ffb86c;
 }
