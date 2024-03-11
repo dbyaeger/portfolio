@@ -12,10 +12,16 @@ body {
     justify-content: center;
 }
 article, aside, section {
-    padding-top: 4rem;
+    margin-top: 4rem;
     padding-left: 4rem;
     color: #bd93f9;
-    padding-bottom: 20rem;
+    padding-bottom: 6rem;
+    margin-bottom: 24rem;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 h1, h2 {
     padding-bottom: 1rem;
@@ -26,6 +32,10 @@ h1, h2 {
 h1 {
     font-size: 2.5em;
     font-family: "Rubik Mono One", monospace;
+    transition: opacity 4s ease-in-out 1s;
+}
+h1:hover {
+    opacity: 0.01;
 }
 h2 {
     font-size: 2em;
@@ -35,6 +45,14 @@ nav {
     background-color: #282a36;
     padding-left: 1rem;
     padding-right: 4rem;
+}
+nav a {
+    transition: font-size 2s ease-out 1s;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #bd93f9;
+    font-size: 300%;
 }
 a {
     font-weight: bold;
@@ -48,13 +66,17 @@ a:hover {
     text-decoration: underline;
     color: #bd93f9;
 }
+
 li {
     list-style-type: none;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
-aside ul li{
-    padding-top: 10px;
+aside ul li {
     display: inline-block;
-    padding-left: 30px;
+}
+ul {
+    padding-inline-start: 16px;
 }
 i {
     font-size: 4em;
@@ -83,10 +105,11 @@ p {
     line-height: 1.6;
 }
 
-aside header h2 {
-    margin-left: 9rem;
-}
-
 p strong {
     color: #ffb86c;
+    transition: color 3s linear 2s;
+}
+
+p strong:hover {
+    color: #f8f8f8f3;
 }
